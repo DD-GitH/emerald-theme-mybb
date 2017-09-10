@@ -1,0 +1,141 @@
+<html>
+  <head>
+	<title>Emerald Documentation</title>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+html, body
+{
+  margin:0px;
+  background:#F6F6F6;
+  font-family: "Roboto";
+}
+.header_logo
+{
+  line-height:1.4;
+  height:150px;
+  color:white;
+  text-align:center;
+  font-family: "Lobster";
+  font-size:35px;
+  background:url("http://i.imgur.com/DDEy9V9.png");
+}
+.side
+{
+  float:left;
+  width:17%;
+  margin:20px;
+  background:#27AE60;
+  padding:10px 16px;
+  font-size:17px;
+  color:white;
+  line-height:2;
+  border-bottom:3px solid #1E8D4D;
+  border-radius:2px;
+}
+.side a
+{
+  border-bottom:1px dashed #1E8D4D;
+}
+a, a:link, a:visited, a:active, a:hover
+{
+  color:white;
+  text-decoration:none;
+}
+.content
+{
+  margin:20px;
+  margin-left:0px;
+  padding-left:40px;
+  padding:20px;
+  width:73%;
+  float:right;
+  background:#FFF;
+  border-radius:2px;
+  border: 1px solid #C2C2C2;
+}
+.question
+{
+  font-weight:bold;
+  display:block;
+  font-size:20px;
+  padding-top:20px;
+  padding-bottom:10px;
+}
+.reply
+{
+  display:block;
+  padding:5px;
+  line-height:1.5;
+}
+xmp
+{
+  display:inline-block;
+  color:#FF0036;
+  background-color: #F7F7F9;
+border: 1px solid #E1E1E8;
+  padding:5px;
+  margin:0;
+}
+</style>
+  </head>
+  <body>
+    <div class="header_logo"><br>
+      <span id="logo"></i>Emerald Documentation</span>
+    </div>
+  <div class="side"><a href="#intro">Introduction</a><br>
+    <a href="#install">Installation</a><br><a href="#logoedit">Logo</a><br><a href="#header">Header</a><br><a href="#sidebars">Sidebars</a><br><a href="#icons">Font Icons</a><br><a href="#contact">Contact us</a></div>
+  <div class="content">
+	<span id="intro" class="question">Introduction</span>
+    <span class="reply">First we need to tell you "Thank you for your purchase!"<br>Hope you'll be appreciated by our work. Thank you again.</span>
+	<span id="install" class="question">Theme Installation</span>
+    <span class="reply">You need to install FileZilla first to transfer files to your MyBB directory via FTP<br>
+Connect to your website via FTP using FileZilla, and copy all files of the "Upload" directory of the provided folder (after unzipping the archive) when you purchased the item.<br>
+Go to your MyBB forum admin panel, open the "Templates & Style" page, then click in "Import a theme". Choose "Local File" and select the "theme.xml" file from the XML directory of the theme's provided folder. Choose any name for your theme on the next input. Then click on "Import Theme".
+<br>To set your theme as a default one for your forum, go again to "Templates & Style" and click on the little window icon.</span><br>
+        <span id="logoedit" class="question">Logo Changing</span>
+    <span class="reply">First, go to your AdminCP, go to "Templates" page and select the templates group of the theme >> Header Templates >> header :<br>
+<br>
+You'll find the HTML/CSS logo of the theme which is : <xmp><i class="fa fa-diamond"></i> Emerald</xmp>
+<br> To change that into an image (which is highly not recommended because of margin & height problems), replace that to : <xmp><img src="YOUR IMAGE LINK" /></xmp><br>
+To keep an HTML/CSS logo, change into any text, for example "BestForums". If you want to add a font icon for that (as our logo) please check here. For example <xmp><i class="fa fa-diamond"></i></xmp> means diamond icon.</span>
+  	<span id="header" class="question">Header Block</span>
+    <span class="reply">Go to your AdminCP, go to "Templates" page and select the templates group of the theme >> Header Templates >> header :<br>
+<br>
+You'll find the title which is : <xmp>Emerald - Demo</xmp><br>
+And the description : <xmp>A demo forum for a great theme</xmp><br>
+You just have to change the text into whatever you want, also add html stuffs if you have some skills.</span>
+    <span id="sidebars" class="question">Sidebars</span>
+<span class="reply">Go to Templates >> Emerald Templates >> Index Page Templates >> index<br>
+<strong>To delete the sidebars</strong>, search for : <xmp><div class="forum" style="float: left;">{$forums}{$boardstats}</div>
+<div class="side" style="float: right; width: 22%; margin: auto;"></xmp><br>
+And replace it with : <xmp><div class="forum">{$forums}{$boardstats}</div>
+<div class="side" style="display:none;"></xmp><br>
+<strong>To delete the announcement sidebar</strong>, search for (and then delete it) : <xmp><table style="" class="tborder" border="0" cellpadding="{$theme['tablespace']}" cellspacing="{$theme['borderwidth']}">
+<tbody><tr>
+   <td style="font-weight: bold;" class="thead">
+  <i class="fa fa-bullhorn"></i> Announcements 
+   </td>
+</tr>
+
+<tr>
+   <td class="trow2" style="padding:11px">
+      <a href="#">This is an example !</a>
+   </td>
+</tr>
+</tbody></table></xmp><br>
+<strong>To add an announcement (with link)</strong>, search for the past code, the first link is : <xmp><a href="#">This is an example !</a></xmp>, as a first link you can edit the text and replace "#" with your link.<br>
+To add another link, add after that (for example) : <xmp><br><a href="YOUR LINK">THE TEXT</a></xmp></span>
+  <span id="icons" class="question">Font Icons</span>
+<span class="reply">If you like to add an icon to your text logo (as wrote at the section "Logo Changing"):<br>
+<strong>First,</strong> search for an icon here : http://fortawesome.github.io/Font-Awesome/icons/<br>
+For example i click on "diamond" icon, i'll be redirected to http://fortawesome.github.io/Font-Awesome/icon/diamond/<br>
+I will get this code : <xmp><i class="fa fa-diamond"></i></xmp> It represents the icon i want. <br><strong>Then,</strong> i can use it for my logo (as wrote before) like this : <xmp><i class="fa fa-diamond"></i> Emerald</xmp><br>
+Or as a forum name, category name...etc
+</span>
+<span id="contact" class="question">Contact us</span>
+<span class="reply">If there is any problem or question, please contact us via email, please do it via the TF email form <a style="color:grey;" href="http://themeforest.net/user/darsider">here</a>.<br>Thanks again for buying !</span>
+  </div>
+  </body>
+</html>
