@@ -3,7 +3,7 @@ A beautiful responsive &amp; modern theme for MyBB 1.8 (Documentation included)
 
 Demo : https://developement.design/demo/emerald/
 
-Feautures :
+Features :
 
     Clean & Modern
     Responsivie & Retina Ready
