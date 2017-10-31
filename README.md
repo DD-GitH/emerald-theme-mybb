@@ -6,7 +6,7 @@ Demo : https://developement.design/demo/emerald/
 Features :
 
     Clean & Modern
-    Responsivie & Retina Ready
+    Responsive & Retina Ready
     CSS Animations
     Google Fonts
     Font Icons
