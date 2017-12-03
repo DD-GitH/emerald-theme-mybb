@@ -24,6 +24,16 @@
 	font-size: 13px;
 }
 
+html{
+	min-height: 100%;
+	position: relative;
+}
+
+body {
+	margin: 0;
+	margin-bottom: 180px;
+}
+
 .post_flexible
 {
 	display:flex;
@@ -2154,7 +2164,15 @@ display:block;width:60%
 		]]>
 		</stylesheet>
 		<stylesheet name="footer.css" version="1812"><![CDATA[
-.footer-distributed {
+html{  min-height: 100%;
+  position: relative;}
+body {
+  margin: 0;
+  margin-bottom: 180px;}
+
+.footer-distributed { 
+	position: absolute;
+	bottom: 0;
 	background: #2C3E50;
 	width: 100%;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
