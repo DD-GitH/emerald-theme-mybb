@@ -2840,10 +2840,10 @@ margin-right:5px;font-family: 'FontAwesome';content:"\f080";
 	text-align: center;
 	padding: 20px;
 }
+div > div.post_content > div > form > button {
+margin-right: 8px
+}
 
-
-		
-		
 		
 		]]>
 		</stylesheet>
