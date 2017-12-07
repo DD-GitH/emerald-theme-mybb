@@ -25,6 +25,6 @@ Skype : ef.team
 
 Email : business@developement.design (for business only)
 
-For issues : https://github.com/DD-GitH/emerald-theme-mybb/issues
+For issues : https://developement.design/forum/forumdisplay.php?fid=12 
 
 Leave a star if you like the theme :D
